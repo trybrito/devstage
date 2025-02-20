@@ -1,7 +1,7 @@
-import { Button } from '@/components/button';
-import { IconButton } from '@/components/icon-button';
-import { InputField, InputIcon, InputRoot } from '@/components/input';
-import { ArrowRight, Copy, Mail, User } from 'lucide-react';
+import { Button } from '@/components/button'
+import { IconButton } from '@/components/icon-button'
+import { InputField, InputIcon, InputRoot } from '@/components/input'
+import { ArrowRight, Copy, Mail, User } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -28,5 +28,5 @@ export default function Home() {
         <InputField type="email" placeholder="Digite seu usuário" />
       </InputRoot>
     </main>
-  );
+  )
 }
