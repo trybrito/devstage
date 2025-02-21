@@ -21,6 +21,9 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "style": {
+        "useSelfClosingElements": "info"
+      },
       "a11y": {
         "noSvgWithoutTitle": "off"
       },
