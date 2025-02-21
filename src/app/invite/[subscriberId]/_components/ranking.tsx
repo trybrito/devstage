@@ -1,8 +1,8 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
-import medalCopper from '../../../assets/medal-copper.svg'
-import medalGold from '../../../assets/medal-gold.svg'
-import medalSilver from '../../../assets/medal-silver.svg'
+import medalCopper from '../../../../assets/medal-copper.svg';
+import medalGold from '../../../../assets/medal-gold.svg';
+import medalSilver from '../../../../assets/medal-silver.svg';
 
 export function Ranking() {
   return (
@@ -53,5 +53,5 @@ export function Ranking() {
         </div>
       </div>
     </div>
-  )
+  );
 }
