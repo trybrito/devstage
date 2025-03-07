@@ -1,18 +1,18 @@
-import Image, { type ImageProps } from 'next/image';
+import Image, { type ImageProps } from 'next/image'
 
-import medalCopper from '../../../../assets/medal-copper.svg';
-import medalGold from '../../../../assets/medal-gold.svg';
-import medalSilver from '../../../../assets/medal-silver.svg';
-import { getRanking } from '@/http/api';
+import { getRanking } from '@/http/api'
+import medalCopper from '../../../../assets/medal-copper.svg'
+import medalGold from '../../../../assets/medal-gold.svg'
+import medalSilver from '../../../../assets/medal-silver.svg'
 
 const images: Record<string, ImageProps> = {
   '1': medalGold,
   '2': medalSilver,
   '3': medalCopper,
-};
+}
 
 export async function Ranking() {
-  const { ranking } = await getRanking();
+  const { ranking } = await getRanking()
 
   return (
     <div className="w-full max-w-[440px] space-y-5">
@@ -21,8 +21,8 @@ export async function Ranking() {
       </h2>
 
       {ranking.map((item, index) => {
-        const rankingPosition = index + 1;
-        const rankingImage = images[rankingPosition];
+        const rankingPosition = index + 1
+        const rankingImage = images[rankingPosition]
 
         return (
           <div key={item.id} className="space-y-4">
@@ -45,8 +45,8 @@ export async function Ranking() {
               />
             </div>
           </div>
-        );
+        )
       })}
     </div>
-  );
+  )
 }
